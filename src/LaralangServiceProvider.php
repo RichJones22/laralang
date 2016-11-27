@@ -4,6 +4,10 @@ namespace Premise\Laralang;
 
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class LaralangServiceProvider
+ * @package Premise\Laralang
+ */
 class LaralangServiceProvider extends ServiceProvider
 {
     /**

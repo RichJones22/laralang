@@ -7,8 +7,15 @@ use App\Http\Controllers\Controller;
 use Crypt;
 use Illuminate\Http\Request;
 
+/**
+ * Class LaralangController
+ * @package Premise\Laralang\Controllers
+ */
 class LaralangController extends Controller
 {
+    /**
+     * @return mixed
+     */
     public function showLogin()
     {
         if (session('laralang.password') && Crypt::decrypt(session('laralang.password')) == config('laralang.default.password')) {
@@ -18,6 +25,10 @@ class LaralangController extends Controller
         return view('laralang::login');
     }
 
+    /**
+     * @param Request $request
+     * @return mixed
+     */
     public function login(Request $request)
     {
         session(['laralang.password' => Crypt::encrypt($request->input('password'))]);
@@ -29,6 +40,10 @@ class LaralangController extends Controller
         return redirect(Route('laralang::translations'));
     }
 
+    /**
+     * @param Request $request
+     * @return mixed
+     */
     public function logout(Request $request)
     {
         $request->session()->forget('laralang.password');
@@ -36,22 +51,34 @@ class LaralangController extends Controller
         return redirect(Route('laralang::login'));
     }
 
+    /**
+     * @return mixed
+     */
     public function showTranslations()
     {
         return view('laralang::translations');
     }
 
+    /**
+     * @return mixed
+     */
     public function api()
     {
         return DB_Translation::all();
     }
 
+    /**
+     * @param Request $request
+     */
     public function deleteTranslation(Request $request)
     {
         $trans = DB_Translation::findOrFail($request->id);
         $trans->delete();
     }
 
+    /**
+     * @return mixed
+     */
     public function deleteTranslationsAll()
     {
         $trans = DB_Translation::all();
@@ -66,6 +93,9 @@ class LaralangController extends Controller
         return redirect(Route('laralang::translations'));
     }
 
+    /**
+     * @param Request $request
+     */
     public function editTranslation(Request $request)
     {
         $trans = DB_Translation::findOrFail($request->id);
