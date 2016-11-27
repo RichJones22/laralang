@@ -13,7 +13,7 @@
 Running the command below:
 
 ```
-composer require aitor24/laralang
+composer require Premise/laralang
 ```
 
 ### Step 2. Register service provider & aliases
@@ -21,14 +21,14 @@ composer require aitor24/laralang
 Include the line below to config/app.php inside array `'providers' => [` :
 
 ```
-Aitor24\Laralang\LaralangServiceProvider::class,
+Premise\Laralang\LaralangServiceProvider::class,
 ```
 
 
 Include the line below to config/app.php inside array `'aliases' => [` :
 
 ```
-'Laralang'   => Aitor24\Laralang\Facades\Laralang::class,
+'Laralang'   => Premise\Laralang\Facades\Laralang::class,
 ```
 
 
@@ -52,7 +52,7 @@ php artisan migrate
 ```
 
 
-### Step 5. Configure defalt values
+### Step 5. Configure default values
 
 **STRONGLY IMPORTANT:** Change the password of config *(Default password: laralangAdmin )*
 

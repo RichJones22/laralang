@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="http://cdn.materialdesignicons.com/1.7.22/css/materialdesignicons.min.css">
 
 		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-        <link rel="icon" href="{{asset('vendor/Aitor24/Laralang/Images/icon.png')}}">
+        <link rel="icon" href="{{asset('vendor/Premise/Laralang/Images/icon.png')}}">
 
 
         <title>@yield('title')</title>

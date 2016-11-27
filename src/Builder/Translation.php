@@ -1,8 +1,8 @@
 <?php
 
-namespace Aitor24\Laralang\Builder;
+namespace Premise\Laralang\Builder;
 
-use Aitor24\Laralang\Models\DB_Translation;
+use Premise\Laralang\Models\DB_Translation;
 use App;
 
 class Translation

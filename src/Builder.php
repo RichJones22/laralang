@@ -1,10 +1,10 @@
 <?php
 
-namespace Aitor24\Laralang;
+namespace Premise\Laralang;
 
-use Aitor24\Laralang\Builder\ApertiumTrans;
-use Aitor24\Laralang\Builder\Exception;
-use Aitor24\Laralang\Builder\MymemoryTrans;
+use Premise\Laralang\Builder\ApertiumTrans;
+use Premise\Laralang\Builder\Exception;
+use Premise\Laralang\Builder\MymemoryTrans;
 
 class Builder
 {

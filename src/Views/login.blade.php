@@ -4,7 +4,7 @@
 <br><br><br>
 <br>
 <center>
-<img src="{{asset('vendor/Aitor24/Laralang/Images/icon.png')}}" alt="Laralang logo" width="150">
+<img src="{{asset('vendor/Premise/Laralang/Images/icon.png')}}" alt="Laralang logo" width="150">
 <br>
 <br><br><br><br>
 

@@ -15,6 +15,6 @@ return [
         'translator'     => 'mymemory',
         'from_lang'      => 'en',
         'to_lang'        => 'app_locale',
-        'middleware'     => Aitor24\Laralang\Middleware\LaralangMiddleware::class,
+        'middleware'     => Premise\Laralang\Middleware\LaralangMiddleware::class,
     ],
 ];

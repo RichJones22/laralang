@@ -1,8 +1,8 @@
 <?php
 
-namespace Aitor24\Laralang\Controllers;
+namespace Premise\Laralang\Controllers;
 
-use Aitor24\Laralang\Models\DB_Translation;
+use Premise\Laralang\Models\DB_Translation;
 use App\Http\Controllers\Controller;
 use Crypt;
 use Illuminate\Http\Request;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Aitor24\Laralang\Middleware;
+namespace Premise\Laralang\Middleware;
 
 use Closure;
 use Crypt;

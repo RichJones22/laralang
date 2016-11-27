@@ -1,6 +1,6 @@
 <?php
 
-namespace Aitor24\Laralang\Builder;
+namespace Premise\Laralang\Builder;
 
 class Exception extends Translation
 {

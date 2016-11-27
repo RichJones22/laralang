@@ -1,6 +1,6 @@
 <?php
 
-namespace Aitor24\Laralang\Models;
+namespace Premise\Laralang\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
