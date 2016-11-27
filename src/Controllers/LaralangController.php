@@ -52,6 +52,20 @@ class LaralangController extends Controller
         $trans->delete();
     }
 
+    public function deleteTranslationsAll()
+    {
+        $trans = DB_Translation::all();
+
+        \DB::transaction(function () use ($trans) {
+            foreach($trans as $tran)
+            {
+                $tran->delete();
+            }
+        });
+
+        return redirect(Route('laralang::translations'));
+    }
+
     public function editTranslation(Request $request)
     {
         $trans = DB_Translation::findOrFail($request->id);
