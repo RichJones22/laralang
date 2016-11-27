@@ -1,8 +1,8 @@
 {
 	"name": "premise/laralang",
 	"autoload": {
-		"psr-0" : {
-			"Premise\\LaraLang" : "src"
+		"psr-4" : {
+			"Premise\\Laralang\\": "./src"
 		}
 	}
 }
